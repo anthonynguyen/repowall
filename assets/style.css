@@ -1,0 +1,226 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+* {
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+
+body {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAMElEQVQ4y2NgwALevn37n2GgAUmOGKEuhhlCbXo0jEddPOriAXMxXbP1aKoY/C4GADrunn3t3rw2AAAAAElFTkSuQmCC");
+	font-family: "PT Sans", Verdana, Arial, sans-serif;
+	font-size: 13px;
+}
+
+#wrapper {
+	margin: 30px auto 0 auto;
+	position: relative;
+	width: 729px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.repo, #user {
+	background: #fff;
+	background: linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: -moz-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: -webkit-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	box-shadow: 3px 3px 15px #ccc;
+	display: inline-block;
+	float: left;
+	height: 170px;
+	margin: 0 0 24px 24px;
+	padding: 15px;
+	position: relative;
+	width: 195px;
+}
+
+.repo:hover, #user:hover {
+	background: #f4f4f4;
+	background: linear-gradient(top, #f4f4f4 0%, #ebebeb 100%);
+	background: -moz-linear-gradient(top, #f4f4f4 0%, #ebebeb 100%);
+	background: -o-linear-gradient(top, #f4f4f4 0%, #ebebeb 100%);
+	background: -webkit-linear-gradient(top, #f4f4f4 0%, #ebebeb 100%);
+	background: linear-gradient(top, #f4f4f4 0%, #ebebeb 100%);
+}
+
+.repo:hover:after {
+	border-right-color: #f4f4f4;
+}
+
+.repo:nth-child(3n+2) {
+	margin-left: 0;
+}
+
+.repo:nth-child(-n+4) {
+	margin: 0 0 24px 24px;
+}
+
+.repo h2 {
+	max-width: 180px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-shadow: #ddd 1px 1px 3px;
+	white-space: nowrap;
+}
+
+.repo .info, .repo .upd {
+	color: #888;
+	font-size: 12px;
+}
+
+.upd {
+	margin-bottom: 6px;
+}
+
+.repo .description {
+	color: #444;
+	max-height: 55px;
+	max-width: 195px;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.repo:before {
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid transparent;
+	border-right: 60px solid #888;
+	content: "";
+	height: 0;
+	right: 0;
+	top: 0;
+	width: 0;
+	position: absolute;
+}
+
+.repo:after {
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid transparent;
+	border-right: 30px solid #fff;
+	content: "";
+	height: 0;
+	right: 0;
+	top: 0;
+	width: 0;
+	position: absolute;
+}
+
+.repo.javascript:before {
+	border-right-color: #693B00;
+}
+
+.repo.ruby:before {
+	border-right-color: #B50000;
+}
+
+.repo.python:before {
+	border-right-color: #E8E400;
+}
+
+.repo.shell:before {
+	border-right-color: #444;
+}
+
+.repo.java:before {
+	border-right-color: #472800;
+}
+
+.repo.php:before {
+	border-right-color: #0073A1;
+}
+
+.repo.c:before {
+	border-right-color: #00E01A;
+}
+
+.repo.perl:before {
+	border-right-color: #00B7FF;
+}
+
+.repo.cpp:before {
+	border-right-color: #00B315;
+}
+
+.repo.coffeescript:before {
+	border-right-color: #AB6100;
+}
+
+
+
+#user {
+	float: left;
+	height: 396px;
+	margin: 0 0 24px 0;
+}
+
+#user ul {
+	list-style-type: none;
+}
+
+#user ul li {
+	color: #444;
+	line-height: 1.5;
+}
+
+#user ul li a {
+	color: blue;
+}
+
+#user ul li a:hover {
+	text-decoration: underline;
+}
+
+#user img {
+	background: #fff;
+	background: linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: -moz-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: -webkit-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	background: linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
+	border: 1px solid #999;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #999;
+	display: block;
+	height: 80px;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	padding: 10px;
+	position: relative;
+	width: 80px;
+}
+
+#user h2, #user h3 {
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#user h3 {
+	color: #666;
+	margin-bottom: 20px;
+}
+
+#user .bio:after {
+	content: '&rqout;';
+}
+
+.quan {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.quan:after {
+	content: ' ';
+}
